@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Masuk — NIVORA</title>
+  <meta name="description" content="NIVORA — sistem pesanan dan untung kuih untuk peniaga, serta tempahan dalam talian tanpa akaun untuk pelanggan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="icon" type="image/png" href="/img/nivora-favicon.png">
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-art">
+      <div class="auth-art-inner">
+        <div class="auth-brand">
+          <div class="brand-mark">
+            <img src="/img/nivora-mark.png" alt="NIVORA">
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:17px;color:#fff;letter-spacing:-.02em">NIV<span style="color:#95D5B2">ORA</span></div>
+            <div style="font-size:10.5px;color:#78716c;font-weight:600">Sistem Pesanan & Untung Kuih</div>
+          </div>
+        </div>
+
+        <div class="auth-eyebrow">Untuk peniaga &amp; pelanggan</div>
+
+        <h1 class="auth-headline">Tempahan tersusun.<br><em>Semua nampak jelas.</em></h1>
+        <p class="auth-lead">
+          Peniaga urus pesanan, kos dan margin untung. Pelanggan tempah kuih tanpa akaun
+          dan semak status bila-bila masa — satu sistem, dua pengalaman.
+        </p>
+
+        <div class="auth-audience">
+          <div class="auth-aud-card">
+            <div class="auth-aud-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1-5H5L4 9Z"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>
+              <span>Peniaga</span>
+            </div>
+            <ul>
+              <li>Untung bersih setiap pesanan</li>
+              <li>Jadual &amp; status tempahan</li>
+              <li>Kalkulator kos resipi</li>
+            </ul>
+          </div>
+          <div class="auth-aud-card">
+            <div class="auth-aud-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.6-3.4 3.2-5.4 7-5.4s6.4 2 7 5.4"/></svg>
+              <span>Pelanggan</span>
+            </div>
+            <ul>
+              <li>Tempah tanpa akaun</li>
+              <li>Resit disahkan peniaga</li>
+              <li>Semak status bila-bila masa</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="auth-aud-note">Peniaga log masuk di sebelah. Pelanggan boleh terus tempah dari direktori kedai.</p>
+      </div>
+
+      <div class="auth-foot">
+        <span>© 2026 NIVORA</span>
+        <span>Kampung Baru · Shah Alam</span>
+        <span>Dibina untuk peniaga &amp; pelanggan Malaysia</span>
+      </div>
+    </div>
+
+    <div class="auth-form-side">
+      <div class="auth-card">
+        <div class="row" style="gap:8px">
+          <span class="badge badge-amber">Log masuk selamat</span>
+          <span class="badge badge-slate">Peniaga &amp; pentadbir</span>
+        </div>
+        <h2 style="margin-top:14px">Selamat kembali</h2>
+        <p class="sub">Log masuk untuk peniaga dan pentadbir platform. Pelanggan tidak perlu akaun.</p>
+
+        <form class="auth-form" id="loginForm" novalidate>
+          <div class="field">
+            <label class="label" for="email">E-mel</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="username" placeholder="nama@kedai.com" required>
+          </div>
+          <div class="field">
+            <label class="label" for="password">Kata laluan</label>
+            <div style="position:relative">
+              <input class="input" id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required style="padding-right:44px">
+              <button type="button" class="icon-btn" id="togglePw" aria-label="Tunjuk kata laluan"
+                style="position:absolute;right:5px;top:50%;transform:translateY(-50%)">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="loginError" class="err" hidden></div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginBtn">
+            <span>Log Masuk</span>
+          </button>
+        </form>
+
+        <div class="auth-divider"><span>atau</span></div>
+
+        <a class="btn btn-ghost btn-lg btn-block" href="/order.html" id="customerEntry">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 9h16l-1-5H5L4 9Z"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/>
+          </svg>
+          <span>Tempah sebagai pelanggan</span>
+        </a>
+        <p class="tiny muted center" style="margin-top:10px">
+          Tiada akaun diperlukan · pilih kedai di <span class="mono">/order.html</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

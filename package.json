@@ -1,0 +1,20 @@
+{
+  "name": "nivora-kuih",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NIVORA — Sistem Pengurusan Pesanan & Untung Kuih-Muih",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed.js",
+    "reset": "node src/db/seed.js --reset",
+    "test": "node scripts/smoke-test.js",
+    "ui-check": "node scripts/ui-check.mjs",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
